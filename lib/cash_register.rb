@@ -22,7 +22,7 @@ class CashRegister
       i = 0
       @items << title
       i += 1
-    
+    end
   end
 
   def apply_discount
