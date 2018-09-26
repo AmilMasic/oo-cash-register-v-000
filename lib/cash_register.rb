@@ -17,9 +17,10 @@ class CashRegister
     @item = title
     self.total
     self.total = self.total + (price * quantity)
+    i = 0
     # @items << @item
     while i < quantity
-      i = 0
+      # i = 0
       @items << title
       i += 1
     end
