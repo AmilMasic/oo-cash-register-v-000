@@ -19,11 +19,12 @@ class CashRegister
   end
 
   def apply_discount
-  while discount == 20
-    self.total = self.total - (self.total * 0.2)
-    puts "After the discount, the total comes to $#{self.total.to_i}."
-  end
-    puts "There is no discount to apply."
+    #infinite loop
+  # while discount == 20
+  #   self.total = self.total - (self.total * 0.2)
+  #   puts "After the discount, the total comes to $#{self.total.to_i}."
+  # end
+  #   puts "There is no discount to apply."
     # break
 
   end
