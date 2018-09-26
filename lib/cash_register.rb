@@ -6,6 +6,7 @@ class CashRegister
     # @total = total
     @total = 0
     @discount = discount
+    @items = []
   end
 
  def total
@@ -16,6 +17,7 @@ class CashRegister
     @item = title
     self.total
     self.total = self.total + (price * quantity)
+    @items << @item
   end
 
   def apply_discount
@@ -26,4 +28,9 @@ class CashRegister
       "After the discount, the total comes to $#{self.total.to_i}."
     end
   end
+
+  def items
+    @@items
+  end
+
 end
